@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/dhanalakshmi-srinivasan-university-perambalur-232112",
-  "https://www.shiksha.com/college/apeejay-institute-of-management-and-engineering-technical-campus-jalandhar-24788",
-  "https://www.shiksha.com/college/oxford-engineering-college-tiruchirappalli-20815",
-  "https://www.shiksha.com/college/mahendra-institute-of-technology-mit-namakkal-42792",
-  "https://www.shiksha.com/college/college-of-dairy-science-and-technology-thiruvananthapuram-kerala-veterinary-and-animal-sciences-university-63903",
-  "https://www.shiksha.com/college/abss-institute-of-technology-meerut-43283",
-  "https://www.shiksha.com/college/government-engineering-college-chamarajanagar-60728",
-  "https://www.shiksha.com/college/thamirabharani-engineering-college-tirunelveli-61663",
-  "https://www.shiksha.com/college/haryana-institute-of-technology-jhajjar-32442",
-  "https://www.shiksha.com/college/sri-revana-siddeshwara-institute-of-technology-airport-new-airport-bangalore-42794",
-  "https://www.shiksha.com/college/dr-rizvi-college-of-engineering-uttar-pradesh-other-24940",
-  "https://www.shiksha.com/college/institute-of-aeronautics-and-engineering-sha-shib-group-of-institutions-bhopal-26715",
-  "https://www.shiksha.com/college/swami-vivekanand-group-of-institutes-mohali-28461",
-  "https://www.shiksha.com/college/mditm-maryland-institute-of-technology-management-jharkhand-other-54042",
-  "https://www.shiksha.com/college/bharathidasan-engineering-college-vellore-61457",
-  "https://www.shiksha.com/university/tantia-university-sriganaganagar-42663",
-  "https://www.shiksha.com/college/mahila-mahavidyalaya-nagpur-66871",
-  "https://www.shiksha.com/college/matoshri-institute-of-technology-nashik-99493",
-  "https://www.shiksha.com/college/jayaraj-annapackiam-csi-college-of-engineering-tamil-nadu-other-22692",
-  "https://www.shiksha.com/college/giet-college-of-engineering-east-godavari-60708",
+  "https://www.shiksha.com/college/asra-group-of-institutions-tehsil-bhawanigarh-65145",
+  "https://www.shiksha.com/college/mother-teresa-institute-of-science-and-technology-krishna-99475",
+  "https://www.shiksha.com/college/pkg-college-of-engineering-and-technology-panipat-146643",
+  "https://www.shiksha.com/college/dr-k-n-modi-engineering-college-ghaziabad-148591",
+  "https://www.shiksha.com/college/kt-patil-college-of-engineering-and-technology-osmanabad-maharashtra-other-59605",
+  "https://www.shiksha.com/college/paladugu-parvathi-devi-college-of-engineering-and-technology-vijayawada-60871",
+  "https://www.shiksha.com/college/shree-sathyam-college-of-engineering-and-technology-salem-61585",
+  "https://www.shiksha.com/college/aryabhatta-group-of-institutes-barnala-68007",
+  "https://www.shiksha.com/college/sawai-madhopur-college-of-engineering-technology-rajasthan-other-42401",
+  "https://www.shiksha.com/college/sri-vidya-college-of-engineering-technology-tamil-nadu-other-42755",
+  "https://www.shiksha.com/college/aryans-college-of-engineering-rajpura-53242",
+  "https://www.shiksha.com/university/nilamber-pitambar-university-jharkhand-other-64749",
+  "https://www.shiksha.com/college/alpine-institute-of-paramedical-science-dehradun-116497",
+  "https://www.shiksha.com/college/dr-lankapalli-bullayya-college-of-engineering-visakhapatnam-146349",
+  "https://www.shiksha.com/college/r-m-engineering-college-madhuranthagam-228583",
+  "https://www.shiksha.com/college/shiva-trust-s-sant-eknath-college-of-engineering-aurangabad-228603",
+  "https://www.shiksha.com/college/jawahar-engineering-college-saligramam-chennai-37347",
+  "https://www.shiksha.com/college/yogananda-institute-of-technology-and-science-tirupati-42703",
+  "https://www.shiksha.com/college/nishitha-college-of-engineering-and-technology-kandukur-hyderabad-43021",
+  "https://www.shiksha.com/college/sri-mittapalli-institute-of-technology-for-women-smitw-guntur-47920",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1561
+    c_count = 1981
 
     try:
         for base_url in BASE_URL:
