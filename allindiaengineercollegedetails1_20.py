@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/asra-group-of-institutions-tehsil-bhawanigarh-65145",
-  "https://www.shiksha.com/college/mother-teresa-institute-of-science-and-technology-krishna-99475",
-  "https://www.shiksha.com/college/pkg-college-of-engineering-and-technology-panipat-146643",
-  "https://www.shiksha.com/college/dr-k-n-modi-engineering-college-ghaziabad-148591",
-  "https://www.shiksha.com/college/kt-patil-college-of-engineering-and-technology-osmanabad-maharashtra-other-59605",
-  "https://www.shiksha.com/college/paladugu-parvathi-devi-college-of-engineering-and-technology-vijayawada-60871",
-  "https://www.shiksha.com/college/shree-sathyam-college-of-engineering-and-technology-salem-61585",
-  "https://www.shiksha.com/college/aryabhatta-group-of-institutes-barnala-68007",
-  "https://www.shiksha.com/college/sawai-madhopur-college-of-engineering-technology-rajasthan-other-42401",
-  "https://www.shiksha.com/college/sri-vidya-college-of-engineering-technology-tamil-nadu-other-42755",
-  "https://www.shiksha.com/college/aryans-college-of-engineering-rajpura-53242",
-  "https://www.shiksha.com/university/nilamber-pitambar-university-jharkhand-other-64749",
-  "https://www.shiksha.com/college/alpine-institute-of-paramedical-science-dehradun-116497",
-  "https://www.shiksha.com/college/dr-lankapalli-bullayya-college-of-engineering-visakhapatnam-146349",
-  "https://www.shiksha.com/college/r-m-engineering-college-madhuranthagam-228583",
-  "https://www.shiksha.com/college/shiva-trust-s-sant-eknath-college-of-engineering-aurangabad-228603",
-  "https://www.shiksha.com/college/jawahar-engineering-college-saligramam-chennai-37347",
-  "https://www.shiksha.com/college/yogananda-institute-of-technology-and-science-tirupati-42703",
-  "https://www.shiksha.com/college/nishitha-college-of-engineering-and-technology-kandukur-hyderabad-43021",
-  "https://www.shiksha.com/college/sri-mittapalli-institute-of-technology-for-women-smitw-guntur-47920",
+  "https://www.shiksha.com/college/mahila-utkarsha-pratishthans-institute-of-pharmacy-maharashtra-other-88791",
+  "https://www.shiksha.com/college/pvp-college-of-pharmacy-maharashtra-other-88799",
+  "https://www.shiksha.com/college/inamdar-college-of-pharmacy-gulbarga-89033",
+  "https://www.shiksha.com/college/zadbuke-institute-of-pharmacy-solapur-89061",
+  "https://www.shiksha.com/college/shaineshwar-shikshan-prasarak-mandal-s-college-of-d-pharmacy-dhule-97339",
+  "https://www.shiksha.com/college/government-head-quarters-hospital-namakkal-106057",
+  "https://www.shiksha.com/college/v-pp-muthiah-pillai-meenakshi-ammal-college-w-virudhunagar-111603",
+  "https://www.shiksha.com/college/vidya-jyoti-institute-of-higher-education-derabassi-129103",
+  "https://www.shiksha.com/college/dhattarwal-college-of-pharmacy-jhunjhunu-192707",
+  "https://www.shiksha.com/college/shri-suleshwari-college-of-physiotherapy-mehsana-197165",
+  "https://www.shiksha.com/college/baba-ishar-singh-polytechnic-moga-201263",
+  "https://www.shiksha.com/college/mata-sahibkaur-college-of-pharmacy-jhajjar-201747",
+  "https://www.shiksha.com/college/bokaro-institute-of-medical-and-health-sciences-bimhs-bokaro-steel-city-207587",
+  "https://www.shiksha.com/college/buddha-school-of-pharmacy-hazaribagh-207591",
+  "https://www.shiksha.com/college/ayesha-college-of-pharmacy-gulbarga-207685",
+  "https://www.shiksha.com/college/cambridge-college-of-pharmacy-bidar-207707",
+  "https://www.shiksha.com/college/k-r-e-society-s-madanmohan-harish-chandra-goel-institute-of-pharmacy-bidar-207785",
+  "https://www.shiksha.com/college/randl-abhishek-rao-college-of-pharmacy-bangalore-207859",
+  "https://www.shiksha.com/college/nadar-mahajana-sangam-college-of-pharmacy-kanyakumari-208245",
+  "https://www.shiksha.com/college/s-s-institute-of-pharmacy-salem-208273",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1981
+    c_count = 3701
 
     try:
         for base_url in BASE_URL:
