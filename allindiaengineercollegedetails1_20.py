@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/mahila-utkarsha-pratishthans-institute-of-pharmacy-maharashtra-other-88791",
-  "https://www.shiksha.com/college/pvp-college-of-pharmacy-maharashtra-other-88799",
-  "https://www.shiksha.com/college/inamdar-college-of-pharmacy-gulbarga-89033",
-  "https://www.shiksha.com/college/zadbuke-institute-of-pharmacy-solapur-89061",
-  "https://www.shiksha.com/college/shaineshwar-shikshan-prasarak-mandal-s-college-of-d-pharmacy-dhule-97339",
-  "https://www.shiksha.com/college/government-head-quarters-hospital-namakkal-106057",
-  "https://www.shiksha.com/college/v-pp-muthiah-pillai-meenakshi-ammal-college-w-virudhunagar-111603",
-  "https://www.shiksha.com/college/vidya-jyoti-institute-of-higher-education-derabassi-129103",
-  "https://www.shiksha.com/college/dhattarwal-college-of-pharmacy-jhunjhunu-192707",
-  "https://www.shiksha.com/college/shri-suleshwari-college-of-physiotherapy-mehsana-197165",
-  "https://www.shiksha.com/college/baba-ishar-singh-polytechnic-moga-201263",
-  "https://www.shiksha.com/college/mata-sahibkaur-college-of-pharmacy-jhajjar-201747",
-  "https://www.shiksha.com/college/bokaro-institute-of-medical-and-health-sciences-bimhs-bokaro-steel-city-207587",
-  "https://www.shiksha.com/college/buddha-school-of-pharmacy-hazaribagh-207591",
-  "https://www.shiksha.com/college/ayesha-college-of-pharmacy-gulbarga-207685",
-  "https://www.shiksha.com/college/cambridge-college-of-pharmacy-bidar-207707",
-  "https://www.shiksha.com/college/k-r-e-society-s-madanmohan-harish-chandra-goel-institute-of-pharmacy-bidar-207785",
-  "https://www.shiksha.com/college/randl-abhishek-rao-college-of-pharmacy-bangalore-207859",
-  "https://www.shiksha.com/college/nadar-mahajana-sangam-college-of-pharmacy-kanyakumari-208245",
-  "https://www.shiksha.com/college/s-s-institute-of-pharmacy-salem-208273",
+  "https://www.shiksha.com/college/max-super-specialty-hospital-ghaziabad-240514",
+  "https://www.shiksha.com/college/rajarshee-chhatrapati-shahu-maharaj-govt-medical-college-kolhapur-240554",
+  "https://www.shiksha.com/college/vijaya-hospital-chennai-240606",
+  "https://www.shiksha.com/college/asian-heart-institute-maharashtra-other-240652",
+  "https://www.shiksha.com/college/city-neuro-centre-hyderabad-240670",
+  "https://www.shiksha.com/college/basavatarakam-indo-american-cancer-institute-and-research-centre-hyderabad-240708",
+  "https://www.shiksha.com/college/bharat-cancer-hospital-and-research-institute-surat-240764",
+  "https://www.shiksha.com/college/mahatma-gandhi-cancer-hospital-and-research-institute-visakhapatnam-240812",
+  "https://www.shiksha.com/college/bsn-college-of-pharmacy-gulbarga-89085",
+  "https://www.shiksha.com/college/swargiya-lilawati-satish-awhad-d-pharmacy-college-hokarna-nanded-89105",
+  "https://www.shiksha.com/college/uttamrao-deshmukh-institute-of-pharmacy-parbhani-89229",
+  "https://www.shiksha.com/college/vamanrao-ithape-d-pharmacy-college-ahmednagar-89243",
+  "https://www.shiksha.com/college/bibi-sharan-kaur-khalsa-college-rupnagar-105493",
+  "https://www.shiksha.com/college/r-b-s-degree-college-uttar-pradesh-other-122723",
+  "https://www.shiksha.com/college/id-memorial-degree-college-ghazipur-124757",
+  "https://www.shiksha.com/college/vikas-pharmacy-college-nalgonda-148507",
+  "https://www.shiksha.com/college/b-r-kohli-institute-of-paramedical-sciences-ramban-151843",
+  "https://www.shiksha.com/college/punjab-pharmacy-college-punjab-other-154877",
+  "https://www.shiksha.com/college/shyam-college-of-pharmacy-dausa-156871",
+  "https://www.shiksha.com/college/aps-college-of-pharmacy-uttar-pradesh-other-181103",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 3701
+    c_count = 4061
 
     try:
         for base_url in BASE_URL:
