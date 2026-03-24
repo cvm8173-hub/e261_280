@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/max-super-specialty-hospital-ghaziabad-240514",
-  "https://www.shiksha.com/college/rajarshee-chhatrapati-shahu-maharaj-govt-medical-college-kolhapur-240554",
-  "https://www.shiksha.com/college/vijaya-hospital-chennai-240606",
-  "https://www.shiksha.com/college/asian-heart-institute-maharashtra-other-240652",
-  "https://www.shiksha.com/college/city-neuro-centre-hyderabad-240670",
-  "https://www.shiksha.com/college/basavatarakam-indo-american-cancer-institute-and-research-centre-hyderabad-240708",
-  "https://www.shiksha.com/college/bharat-cancer-hospital-and-research-institute-surat-240764",
-  "https://www.shiksha.com/college/mahatma-gandhi-cancer-hospital-and-research-institute-visakhapatnam-240812",
-  "https://www.shiksha.com/college/bsn-college-of-pharmacy-gulbarga-89085",
-  "https://www.shiksha.com/college/swargiya-lilawati-satish-awhad-d-pharmacy-college-hokarna-nanded-89105",
-  "https://www.shiksha.com/college/uttamrao-deshmukh-institute-of-pharmacy-parbhani-89229",
-  "https://www.shiksha.com/college/vamanrao-ithape-d-pharmacy-college-ahmednagar-89243",
-  "https://www.shiksha.com/college/bibi-sharan-kaur-khalsa-college-rupnagar-105493",
-  "https://www.shiksha.com/college/r-b-s-degree-college-uttar-pradesh-other-122723",
-  "https://www.shiksha.com/college/id-memorial-degree-college-ghazipur-124757",
-  "https://www.shiksha.com/college/vikas-pharmacy-college-nalgonda-148507",
-  "https://www.shiksha.com/college/b-r-kohli-institute-of-paramedical-sciences-ramban-151843",
-  "https://www.shiksha.com/college/punjab-pharmacy-college-punjab-other-154877",
-  "https://www.shiksha.com/college/shyam-college-of-pharmacy-dausa-156871",
-  "https://www.shiksha.com/college/aps-college-of-pharmacy-uttar-pradesh-other-181103",
+  "https://www.shiksha.com/college/st-wilfred-s-institute-of-pharmaceutical-science-research-thane-245684",
+  "https://www.shiksha.com/college/aditya-bahuuddeshiya-sanstha-s-ayurved-college-and-research-centre-maharashtra-other-86985",
+  "https://www.shiksha.com/college/global-college-of-pharmacy-punjab-rupnagar-87599",
+  "https://www.shiksha.com/college/vinayaka-college-of-pharmacy-punjab-sangrur-88945",
+  "https://www.shiksha.com/college/jss-college-and-hospital-haridwar-89053",
+  "https://www.shiksha.com/college/sr-institute-of-diploma-in-pharmacy-latur-89103",
+  "https://www.shiksha.com/college/sau-mathurabai-bhausaheb-thorat-institute-of-pharmacy-nashik-89197",
+  "https://www.shiksha.com/college/vishal-junnar-seva-mandal-s-institute-of-pharmacy-for-women-pune-89249",
+  "https://www.shiksha.com/college/nandurbar-taluka-vidhayak-samiti-institute-of-pharmacy-maharashtra-other-147699",
+  "https://www.shiksha.com/college/shri-deepchand-fakirchand-lodha-pharmacy-college-nashik-147701",
+  "https://www.shiksha.com/college/s-s-bapu-institute-of-polytechnic-uttar-pradesh-other-148757",
+  "https://www.shiksha.com/college/rajat-technical-college-of-education-uttar-pradesh-other-149125",
+  "https://www.shiksha.com/college/advanced-institute-of-pharmacy-aurangabad-district-palwal-self-financed-179859",
+  "https://www.shiksha.com/college/avadh-paramedical-college-and-institute-uttar-pradesh-other-181111",
+  "https://www.shiksha.com/college/babu-angad-singh-college-of-pharmacy-uttar-pradesh-other-181121",
+  "https://www.shiksha.com/college/b-n-pharmacy-college-azamgarh-181135",
+  "https://www.shiksha.com/college/dixit-college-of-pharmacy-and-research-uttar-pradesh-other-181161",
+  "https://www.shiksha.com/college/hakim-haider-ali-paramedical-college-ghazipur-181219",
+  "https://www.shiksha.com/college/integrated-academy-of-management-and-technology-uttar-pradesh-other-181237",
+  "https://www.shiksha.com/college/lbss-degree-college-pharmacy-uttar-pradesh-other-181275",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4061
+    c_count = 4421
 
     try:
         for base_url in BASE_URL:
