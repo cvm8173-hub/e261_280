@@ -15,26 +15,21 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/st-wilfred-s-institute-of-pharmaceutical-science-research-thane-245684",
-  "https://www.shiksha.com/college/aditya-bahuuddeshiya-sanstha-s-ayurved-college-and-research-centre-maharashtra-other-86985",
-  "https://www.shiksha.com/college/global-college-of-pharmacy-punjab-rupnagar-87599",
-  "https://www.shiksha.com/college/vinayaka-college-of-pharmacy-punjab-sangrur-88945",
-  "https://www.shiksha.com/college/jss-college-and-hospital-haridwar-89053",
-  "https://www.shiksha.com/college/sr-institute-of-diploma-in-pharmacy-latur-89103",
-  "https://www.shiksha.com/college/sau-mathurabai-bhausaheb-thorat-institute-of-pharmacy-nashik-89197",
-  "https://www.shiksha.com/college/vishal-junnar-seva-mandal-s-institute-of-pharmacy-for-women-pune-89249",
-  "https://www.shiksha.com/college/nandurbar-taluka-vidhayak-samiti-institute-of-pharmacy-maharashtra-other-147699",
-  "https://www.shiksha.com/college/shri-deepchand-fakirchand-lodha-pharmacy-college-nashik-147701",
-  "https://www.shiksha.com/college/s-s-bapu-institute-of-polytechnic-uttar-pradesh-other-148757",
-  "https://www.shiksha.com/college/rajat-technical-college-of-education-uttar-pradesh-other-149125",
-  "https://www.shiksha.com/college/advanced-institute-of-pharmacy-aurangabad-district-palwal-self-financed-179859",
-  "https://www.shiksha.com/college/avadh-paramedical-college-and-institute-uttar-pradesh-other-181111",
-  "https://www.shiksha.com/college/babu-angad-singh-college-of-pharmacy-uttar-pradesh-other-181121",
-  "https://www.shiksha.com/college/b-n-pharmacy-college-azamgarh-181135",
-  "https://www.shiksha.com/college/dixit-college-of-pharmacy-and-research-uttar-pradesh-other-181161",
-  "https://www.shiksha.com/college/hakim-haider-ali-paramedical-college-ghazipur-181219",
-  "https://www.shiksha.com/college/integrated-academy-of-management-and-technology-uttar-pradesh-other-181237",
-  "https://www.shiksha.com/college/lbss-degree-college-pharmacy-uttar-pradesh-other-181275",
+  "https://www.shiksha.com/college/guru-arjan-dev-khalsa-college-tarn-taran-72073",
+  "https://www.shiksha.com/college/indrayani-vidya-mandir-s-indrayani-mahavidyalaya-talegaon-dabhade-pune-72289",
+  "https://www.shiksha.com/college/sri-vani-group-of-institutions-krishna-87687",
+  "https://www.shiksha.com/college/indrayani-institute-of-pharmacy-pune-89063",
+  "https://www.shiksha.com/college/nethaji-institute-of-pharmaceutical-sciences-warangal-89327",
+  "https://www.shiksha.com/college/government-polytechnic-college-for-women-sirsa-97007",
+  "https://www.shiksha.com/college/sarvodaya-hospital-and-research-centre-faridabad-106007",
+  "https://www.shiksha.com/college/baba-namdev-university-college-kishankot-gurdaspur-111421",
+  "https://www.shiksha.com/college/r-s-d-academy-college-of-pharmacy-moradabad-149355",
+  "https://www.shiksha.com/college/acharaya-shri-chander-institute-of-nursing-education-jammu-kashmir-other-151839",
+  "https://www.shiksha.com/college/rupesh-badhan-institute-of-pharmacy-dhule-179659",
+  "https://www.shiksha.com/college/amrapali-institute-of-pharmacy-and-sciences-haldwani-188271",
+  "https://www.shiksha.com/college/nandha-siddha-medical-college-and-hospital-erode-193473",
+  "https://www.shiksha.com/college/dr-r-b-singh-gaya-homeopathic-medical-college-and-hospital-182269",
+  "https://www.shiksha.com/college/g-r-hospital-coimbatore-193629",
 ]
 
 
@@ -9243,7 +9238,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4421
+    c_count = 2706
 
     try:
         for base_url in BASE_URL:
